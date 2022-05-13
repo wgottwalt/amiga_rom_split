@@ -59,6 +59,12 @@ int32_t main(int32_t argc, char **argv)
                 std::cout << "created '" << (fname + "_low") << "' and '" << (fname + "_high")
                           << "'" << std::endl;
             }
+            else
+            {
+                std::cerr << "error: unable to open output files '" << (fname + "_low")
+                          << "' and/or '" << (fname + "_high") << "'" << std::endl;
+                return 1;
+            }
         }
         else
         {
