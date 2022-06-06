@@ -8,7 +8,7 @@ OBJECTS = $(ASOURCES:.S=.o) $(CSOURCES:.c=.o) $(CXXSOURCES:.cxx=.o)
 
 ARCH_FLAGS = -pthread -flto -Os -s
 FLAGS = -W -Wall -Wextra
-CXXFLAGS = -std=c++17 $(ARCH_FLAGS) $(FLAGS)
+CXXFLAGS = -std=c++20 $(ARCH_FLAGS) $(FLAGS)
 
 all: $(BINARIES)
 
